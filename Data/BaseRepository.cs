@@ -1,9 +1,10 @@
 using System.Collections.Generic;
-using repohelp.Data;
 using repohelp.Models;
+using repohelp.Repositories;
 using RepositoryHelpers.DataBaseRepository;
 
-namespace repohelp.Repositories {
+namespace repohelp.Data
+{
     public class BaseRepository<T> : IBaseRepository<T> where T : IEntity {
         private readonly CustomRepository<T> Repository;
 

@@ -15,19 +15,4 @@ namespace repohelp.Data {
         }
         public Connection Connection { get; }
     }
-
-    public class BaseRepository<T> {
-        protected readonly CustomRepository<T> Repository;
-
-        protected BaseRepository () {
-            Repository = new CustomRepository<T> (ConnectionBuilder.Instance.Connection);
-        }
-    }
-
-    public class BaseTransaction : CustomTransaction {
-        public BaseTransaction ():
-            base (ConnectionBuilder.Instance.Connection) {
-
-            }
-    }
 }

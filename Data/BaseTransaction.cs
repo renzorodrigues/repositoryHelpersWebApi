@@ -1,7 +1,7 @@
 using repohelp.Data;
 using RepositoryHelpers.DataBaseRepository;
 
-namespace repohelp.Repositories
+namespace repohelp.Data
 {
     public class BaseTransaction : CustomTransaction
     {
