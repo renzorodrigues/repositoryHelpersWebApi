@@ -10,7 +10,12 @@ namespace repohelp.Data {
         private ConnectionBuilder () {
             Connection = new Connection () {
                 Database = RepositoryHelpers.Utils.DataBaseType.SqlServer,
-                    ConnectionString = "Data Source=codorna.fw.landix.com.br;Initial Catalog=SK2_ANDINACL_DSV;Persist Security Info=True;User ID=sa;Password=Masterkey1;MultipleActiveResultSets=True"
+                    ConnectionString = "Data Source=SERVER; " +
+                                       "Initial Catalog=BANCO; " +
+                                       "User ID=USER; " +
+                                       "Password=SENHA; " +
+                                       "Persist Security Info=True; " +
+                                       "MultipleActiveResultSets=True"
             };
         }
         public Connection Connection { get; }
